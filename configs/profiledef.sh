@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="omarchy"
-iso_label="OMARCHY_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_label="OMARCHY_2025"
 iso_publisher="Omarchy <https://omarchy.org>"
 iso_application="Omarchy Installer"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
