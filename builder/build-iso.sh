@@ -23,8 +23,9 @@ cp -r /archiso/configs/releng/* $build_cache_dir/
 rm "$build_cache_dir/airootfs/etc/motd"
 
 # Avoid using reflector for mirror identification as we are relying on the global CDN
-rm -f "$airootfs/etc/systemd/system/multi-user.target.wants/reflector.service"
-
+rm "$build_cache_dir/airootfs/etc/systemd/system/multi-user.target.wants/reflector.service"
+rm -rf "$build_cache_dir/airootfs/etc/systemd/system/reflector.service.d"
+rm -rf "$build_cache_dir/airootfs/etc/xdg/reflector"
 
 # Bring in our configs
 cp -r /configs/* $build_cache_dir/
