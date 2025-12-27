@@ -44,22 +44,22 @@ install_omarchy() {
 set_tokyo_night_colors() {
   if [[ $(tty) == "/dev/tty"* ]]; then
     # Tokyo Night color palette
-    echo -en "\e]P01a1b26" # black (background)
-    echo -en "\e]P1f7768e" # red
-    echo -en "\e]P29ece6a" # green
-    echo -en "\e]P3e0af68" # yellow
-    echo -en "\e]P47aa2f7" # blue
-    echo -en "\e]P5bb9af7" # magenta
-    echo -en "\e]P67dcfff" # cyan
-    echo -en "\e]P7a9b1d6" # white
-    echo -en "\e]P8414868" # bright black
-    echo -en "\e]P9f7768e" # bright red
-    echo -en "\e]PA9ece6a" # bright green
-    echo -en "\e]PBe0af68" # bright yellow
-    echo -en "\e]PC7aa2f7" # bright blue
-    echo -en "\e]PDbb9af7" # bright magenta
-    echo -en "\e]PE7dcfff" # bright cyan
-    echo -en "\e]PFc0caf5" # bright white (foreground)
+    echo -en "\e]P02b2b2b" # black → dark gray (background)
+    echo -en "\e]P1cb3810" # red → orange
+    echo -en "\e]P2cb3810" # green → orange
+    echo -en "\e]P3cb3810" # yellow → orange
+    echo -en "\e]P4cb3810" # blue → orange
+    echo -en "\e]P5cb3810" # magenta → orange
+    echo -en "\e]P6cb3810" # cyan → orange
+    echo -en "\e]P7d0d0d0" # white → light gray
+    echo -en "\e]P83a3a3a" # bright black → lighter gray
+    echo -en "\e]P9cb3810" # bright red → orange
+    echo -en "\e]PAcb3810" # bright green → orange
+    echo -en "\e]PBcb3810" # bright yellow → orange
+    echo -en "\e]PCcb3810" # bright blue → orange
+    echo -en "\e]PDcb3810" # bright magenta → orange
+    echo -en "\e]PEcb3810" # bright cyan → orange
+    echo -en "\e]PFededed" # bright white → very light gray (foreground)
 
     # Set default foreground and background
     echo -en "\033[0m"
